@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belajar Javascript</title>
+    <title>Implementasi Web Storage</title>
 
     <!-- link style bootstrap 5 -->
     <link
@@ -24,43 +24,86 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- form -->
-    <div class="row d-flex justify-content-center child-content " id="user-form">
+
+      <!-- form -->
+      <div
+        class="row d-flex justify-content-center child-content"
+        id="user-form"
+      >
         <div class="col-md-6 align-self-center">
-            <div class="card">
-                <div class="card-body">
-                      <form action="" id="form-data-user">
-                        <div class="mb-3 form-element">
-                            <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama user" value="" maxlength="10" required>
-                        </div>
-                        <div class="mb-3 form-element">
-                          <label for="umur" class="form-label">Umur</label>
-                          <input type="text" class="form-control" name="umur" id="umur" placeholder="Umur user" value="" maxlength="2" required>
-                        </div>
-                        <div class="mb-3 form-element">
-                          <label for="domisili" class="form-label">Domisili</label>
-                          <input type="text" class="form-control" name="domisili" id="domisili" placeholder="Domisili" value="" maxlength="10" required>
-                        </div>
-                        <button type="submit" id="submitButton" value="Submit Data" class=" btn btn-primary">Primary</button>
-                      </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <div class="row d-flex justify-content-center child-content " id="user-form">
-      <div class="col-md-6 align-self-center">
           <div class="card">
-              <div class="card-body">
-                    
-              </div>
+            <div class="card-body">
+              <form action="" id="form-data-user">
+                <div class="mb-3 form-element">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nama"
+                    id="nama"
+                    placeholder="Nama user"
+                    value=""
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-element">
+                  <label for="umur" class="form-label">Umur</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="umur"
+                    id="umur"
+                    placeholder="Umur user"
+                    value=""
+                    maxlength="2"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-element">
+                  <label for="domisili" class="form-label">Domisili</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="domisili"
+                    id="domisili"
+                    placeholder="Domisili"
+                    value=""
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  id="submitButton"
+                  value="Submit Data"
+                  class="btn btn-primary"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
+        </div>
       </div>
-  </div> 
-
+      <div
+        class="row d-flex justify-content-center child-content p-md-4"
+        id="user-list"
+      >
+        <div class="col-md-6 align-self-center">
+          <table id="user-list-table" class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">Umur</th>
+                <th scope="col">Dommisili</th>
+              </tr>
+            </thead>
+            <tbody id="user-list-detail"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
     <!-- script custom js -->
     <script src="script.js"></script>
     <!-- script js boostraps -->
@@ -69,4 +112,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+  </body>
 </html>
