@@ -26,19 +26,40 @@
       </div>
     </div>
     <!-- form -->
-    <div class="card">
-        <div class="card-body">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
+    <div class="row d-flex justify-content-center child-content " id="user-form">
+        <div class="col-md-6 align-self-center">
+            <div class="card">
+                <div class="card-body">
+                      <form action="" id="form-data-user">
+                        <div class="mb-3 form-element">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama user" value="" maxlength="10" required>
+                        </div>
+                        <div class="mb-3 form-element">
+                          <label for="umur" class="form-label">Umur</label>
+                          <input type="text" class="form-control" name="umur" id="umur" placeholder="Umur user" value="" maxlength="2" required>
+                        </div>
+                        <div class="mb-3 form-element">
+                          <label for="domisili" class="form-label">Domisili</label>
+                          <input type="text" class="form-control" name="domisili" id="domisili" placeholder="Domisili" value="" maxlength="10" required>
+                        </div>
+                        <button type="submit" id="submitButton" value="Submit Data" class=" btn btn-primary">Primary</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div> 
+
+    <div class="row d-flex justify-content-center child-content " id="user-form">
+      <div class="col-md-6 align-self-center">
+          <div class="card">
+              <div class="card-body">
+                    
+              </div>
+          </div>
       </div>
-    
+  </div> 
 
     <!-- script custom js -->
     <script src="script.js"></script>
